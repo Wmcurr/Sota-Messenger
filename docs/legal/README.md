@@ -17,12 +17,12 @@ Recommended publishing flow:
 3. Put the GitHub Pages URLs into Play Console.
 4. Keep Play Console declarations consistent with these documents and the app behavior.
 
-Suggested public URLs once GitHub Pages is enabled:
+Suggested public URLs once GitHub Pages is enabled for the `Wmcurr/Sota-Messenger` repository from the `main` branch and `/docs` folder:
 
-- Privacy Policy: `https://wmcurr.github.io/sota/privacy.html`
-- Terms of Use: `https://wmcurr.github.io/sota/terms.html`
-- Account and Data Deletion: `https://wmcurr.github.io/sota/delete-data.html`
-- Permissions: `https://wmcurr.github.io/sota/permissions.html`
+- Privacy Policy: `https://wmcurr.github.io/Sota-Messenger/privacy.html`
+- Terms of Use: `https://wmcurr.github.io/Sota-Messenger/terms.html`
+- Account and Data Deletion: `https://wmcurr.github.io/Sota-Messenger/delete-data.html`
+- Permissions: `https://wmcurr.github.io/Sota-Messenger/permissions.html`
 
 Important implementation notes checked in the code:
 
@@ -33,4 +33,3 @@ Important implementation notes checked in the code:
 - The server folder implements bootstrap, relay, temporary mailbox, DHT, and offline inbox behavior; it is not a classic account server.
 - Location permission is used both for user-initiated location sharing and nearby device discovery needed for offline mesh communication.
 - Foreground services are used for connected-device mesh transport, active call media capture, and live location sharing.
-
