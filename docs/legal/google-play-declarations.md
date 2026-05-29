@@ -1,6 +1,6 @@
 # Google Play Declaration Drafts
 
-Last updated: May 21, 2026
+Last updated: May 26, 2026
 
 These are draft texts for Google Play Console declarations. They should be copied into the relevant Play Console forms only after final review against the exact release build.
 
@@ -172,3 +172,20 @@ Sota requests media permissions so users can select, preview, send, receive, sav
 
 If the release can use Android system Photo Picker and document picker for all user-selected media flows, remove broad media permissions where possible and document picker-based access instead.
 
+## User-Generated Content / Stories / Public Channels
+
+### Declaration and reviewer note
+
+```text
+Sota lets users create messages, media, stories, groups, channels, comments, public handles, and invitations. Sota provides local user blocking and moderation controls for groups/channels. Users can report abuse to wmcurrency@zohomail.eu with the relevant Sota ID, group/channel ID, public handle, story/message details, timestamp, and optional screenshots or exported evidence. Because Sota is peer-to-peer and relay-assisted, the developer cannot delete content already delivered to other users' devices, but may restrict public directory entries, handles, relay/offline delivery, bootstrap/DHT participation, and other infrastructure access for abusive Sota IDs, groups, channels, handles, or traffic patterns.
+```
+
+### Evidence to prepare
+
+Record or screenshot:
+
+1. The blocked-users control in Settings.
+2. Blocking a user from a profile/contact/chat surface.
+3. Group/channel owner moderation controls for members or comments.
+4. Terms of Use showing the UGC, blocking, and reports section.
+5. Server-side moderation denylist path or internal moderation procedure.

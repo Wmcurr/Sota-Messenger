@@ -1,6 +1,6 @@
 # Google Play Data Safety Notes
 
-Last updated: May 21, 2026
+Last updated: May 26, 2026
 
 This is an internal checklist for completing Google Play's Data safety form. It is not a public privacy policy.
 
@@ -108,6 +108,12 @@ Because Sota uses a cryptographic identity rather than a central login account, 
 - the user should include their Sota public ID;
 - data already delivered to other users' devices cannot be deleted by the developer.
 
+## UGC / Abuse Reports
+
+If users report abuse by email or another support channel, declare support-related personal data as collected when applicable. Reports may include the reporter's email address, Sota IDs, group/channel IDs, public handles, story/message details, timestamps, screenshots, exported evidence, and the user's description of the issue.
+
+Purpose: app safety, abuse prevention, legal compliance, and infrastructure protection.
+
 ## Policy Links To Prepare
 
 Required or recommended public URLs:
@@ -118,4 +124,3 @@ Required or recommended public URLs:
 - Permissions Explanation
 
 Use GitHub Pages or another stable public web page. Avoid private repositories, temporary links, raw files, or PDFs.
-

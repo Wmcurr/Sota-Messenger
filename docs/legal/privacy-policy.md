@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: May 21, 2026
+Last updated: May 26, 2026
 
 This Privacy Policy explains how Sota handles information when you use the Sota Android app.
 
@@ -96,6 +96,12 @@ Sota does not sell your personal data.
 
 Sota does not use advertising SDKs, advertising ID, or third-party analytics SDKs in the reviewed local codebase.
 
+## Reports and Safety Requests
+
+If you report abuse, request moderation review, or contact support, you may choose to send information such as your email address, Sota public ID, another user's Sota ID, group or channel identifiers, public handles, timestamps, message details, screenshots, exported evidence, and a description of the issue.
+
+This information is used to review the report, respond to you, prevent abuse, comply with law, and protect Sota infrastructure. Depending on the report, the developer may restrict public directory entries, relay/offline delivery, bootstrap/DHT participation, or other infrastructure access for abusive Sota IDs, groups, channels, handles, or traffic patterns.
+
 ## Data Security
 
 Sota uses cryptographic identity, Android Keystore-backed local protection, encrypted local storage mechanisms, transport protection, request signatures, and anti-replay checks where applicable in the protocol.
@@ -130,4 +136,3 @@ This Privacy Policy may be updated as Sota changes. The latest version should be
 
 Mykola Tolochko  
 wmcurrency@zohomail.eu
-
