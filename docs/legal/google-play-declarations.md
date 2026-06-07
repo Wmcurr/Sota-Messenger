@@ -162,15 +162,15 @@ Sota needs Location permission to find nearby devices for offline communication 
 
 ## Broad Media Permissions
 
-### Declaration text if broad media permissions remain
+### Release decision
 
 ```text
-Sota requests media permissions so users can select, preview, send, receive, save, and manage photos, videos, audio files, voice messages, stories, documents, and encrypted backups within the messenger. Media transfer and received-media management are core messenger features.
+The Google Play release should not declare READ_MEDIA_IMAGES, READ_MEDIA_VIDEO, READ_MEDIA_AUDIO, or READ_EXTERNAL_STORAGE unless a future build adds a verified broad-library workflow that cannot be implemented through Android Photo Picker, ACTION_GET_CONTENT, ACTION_OPEN_DOCUMENT, MediaStore write APIs, or user-granted URI access.
 ```
 
-### Lower-risk alternative
+### Current lower-risk approach
 
-If the release can use Android system Photo Picker and document picker for all user-selected media flows, remove broad media permissions where possible and document picker-based access instead.
+The current release uses system pickers and SAF-style URI grants for user-selected media and files. Public saves use MediaStore write flows. If Play Console still shows broad media permissions for an uploaded artifact, inspect the merged manifest for transitive SDK declarations and remove them before submitting.
 
 ## User-Generated Content / Stories / Public Channels
 
@@ -178,6 +178,12 @@ If the release can use Android system Photo Picker and document picker for all u
 
 ```text
 Sota lets users create messages, media, stories, groups, channels, comments, public handles, and invitations. Sota provides local user blocking and moderation controls for groups/channels. Users can report abuse to wmcurrency@zohomail.eu with the relevant Sota ID, group/channel ID, public handle, story/message details, timestamp, and optional screenshots or exported evidence. Because Sota is peer-to-peer and relay-assisted, the developer cannot delete content already delivered to other users' devices, but may restrict public directory entries, handles, relay/offline delivery, bootstrap/DHT participation, and other infrastructure access for abusive Sota IDs, groups, channels, handles, or traffic patterns.
+```
+
+### Public standards for child safety
+
+```text
+Sota's public Terms of Use explicitly prohibit Child Sexual Abuse and Exploitation (CSAE), grooming, sexual exploitation of minors, and content that endangers or abuses minors. Sota provides in-app reporting for users, messages, stories, groups, and channels, and may restrict or permanently block abusive Sota IDs, groups, channels, handles, relay/offline delivery, bootstrap/DHT participation, or other infrastructure access.
 ```
 
 ### Evidence to prepare

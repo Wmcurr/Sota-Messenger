@@ -41,12 +41,18 @@ Messages, media messages, voice messages, files, call signaling, stories, groups
 - Used when the user selects, captures, sends, receives, saves, edits, or posts media.
 - Purpose: app functionality.
 - Optional: user initiated.
+- Current Play release direction: use Android Photo Picker, ACTION_GET_CONTENT,
+  ACTION_OPEN_DOCUMENT, MediaStore write APIs, or user-granted URI access instead
+  of declaring broad READ_MEDIA_IMAGES / READ_MEDIA_VIDEO permissions.
 
 ### Audio files and voice/audio
 
 - Used for voice messages, calls, walkie-talkie, voice channels, media files, and audio playback.
 - Purpose: app functionality.
 - Optional: user initiated, except active call features require microphone when used.
+- Current Play release direction: do not declare broad READ_MEDIA_AUDIO unless a
+  future release adds a verified broad audio-library workflow that cannot be
+  implemented with user-selected URI access.
 
 ### Location
 
@@ -113,6 +119,11 @@ Because Sota uses a cryptographic identity rather than a central login account, 
 If users report abuse by email or another support channel, declare support-related personal data as collected when applicable. Reports may include the reporter's email address, Sota IDs, group/channel IDs, public handles, story/message details, timestamps, screenshots, exported evidence, and the user's description of the issue.
 
 Purpose: app safety, abuse prevention, legal compliance, and infrastructure protection.
+
+Public standards must explicitly prohibit Child Sexual Abuse and Exploitation
+(CSAE), grooming, sexual exploitation of minors, and content that endangers or
+abuses minors. This wording should remain in the public Terms of Use before the
+app is submitted for review.
 
 ## Policy Links To Prepare
 

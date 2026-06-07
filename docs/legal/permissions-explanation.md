@@ -74,16 +74,9 @@ Sota uses microphone access for:
 
 ## Media and Files
 
-Permissions:
+Sota uses Android system pickers, the photo picker, document picker, MediaStore write APIs, and user-granted URI access so users can select, preview, send, receive, save, and manage photos, videos, audio, documents, voice messages, stories, and backups.
 
-- `READ_EXTERNAL_STORAGE` on older Android versions;
-- `READ_MEDIA_IMAGES`;
-- `READ_MEDIA_VIDEO`;
-- `READ_MEDIA_AUDIO`.
-
-Sota uses media access so users can select, preview, send, receive, save, and manage photos, videos, audio, documents, voice messages, stories, and backups.
-
-If a release can rely entirely on Android's system photo picker and document picker, broad media permissions should be reduced. If broad permissions remain in the release, the Play Console explanation should tie them to core messenger media functionality.
+The Google Play release is intended to avoid broad media-library permissions such as `READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`, `READ_MEDIA_AUDIO`, and `READ_EXTERNAL_STORAGE`. If a future release needs broad media access, the Play Console declaration must tie that access to a verified core messenger media workflow.
 
 ## Notifications
 
@@ -150,4 +143,3 @@ Permissions:
 - `USE_FINGERPRINT`
 
 Sota uses biometrics for optional app lock, recovery phrase viewing, and security-sensitive settings.
-

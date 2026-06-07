@@ -48,6 +48,8 @@ Sota lets users create and share user-generated content, including messages, med
 
 You must not use Sota to create, publish, forward, or distribute content that is illegal, abusive, exploitative, hateful, violent, harassing, sexually exploitative, non-consensual, spam, malware, or otherwise harmful.
 
+You must not create, publish, forward, request, store, or distribute Child Sexual Abuse and Exploitation (CSAE) content or any content that sexualizes, exploits, grooms, coerces, endangers, or abuses minors. Sota may restrict or permanently block Sota IDs, groups, channels, handles, relay/offline delivery, bootstrap/DHT participation, or other infrastructure access connected to confirmed CSAE or child-safety violations, and may report such violations to appropriate authorities where required by law.
+
 Users can block other Sota IDs locally. Blocking is device-side and protocol-side: Sota may stop showing or accepting messages, calls, stories, notifications, or other traffic from the blocked Sota ID on that user's device.
 
 Because Sota is a peer-to-peer and relay-assisted messenger, the developer cannot delete content that has already been delivered to other users' devices. However, users may report abuse by contacting wmcurrency@zohomail.eu and including the relevant Sota ID, group ID, channel ID, public handle, story, message details, timestamp, and optional screenshots or exported evidence.

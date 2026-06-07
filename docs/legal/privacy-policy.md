@@ -57,7 +57,7 @@ These features are central to Sota's purpose of communication when internet acce
 
 Sota may request access to photos, videos, audio, and files so you can send media, save received media, create stories, export chats, or create and restore encrypted backups.
 
-When Android provides a system picker or document picker, Sota uses the item you selected. If broader media permissions are enabled in the release, they are used to support messenger media workflows such as selecting, previewing, saving, and managing received media.
+When Android provides a system picker, photo picker, or document picker, Sota uses the item you selected and the temporary or persistent URI access granted by Android. The Google Play release is intended to avoid broad media-library permissions unless a future build adds a verified core workflow that cannot be implemented through user-selected picker access.
 
 ### Backups and recovery
 
